@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArunKumar — Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-wrap">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-terminal"></i></span>
+        <span class="brand-text">arunkumar<span class="brand-accent">.k</span></span>
+      </a>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home"           class="nl active">Home</a></li>
+        <li><a href="#about"          class="nl">About</a></li>
+        <li><a href="#skills"         class="nl">Skills</a></li>
+        <li><a href="#experience"     class="nl">Experience</a></li>
+        <li><a href="#projects"       class="nl">Projects</a></li>
+        <li><a href="#education"      class="nl">Education</a></li>
+        <li><a href="#certifications" class="nl">Certs</a></li>
+        <li><a href="#contact"        class="nl">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-wrap">
+
+      <div class="hero-photo-side hero-anim" style="--d:0s">
+        <div class="photo-orbit">
+          <div class="orbit-ring or1"></div>
+          <div class="orbit-ring or2"></div>
+          <div class="orbit-dot od1"></div>
+          <div class="orbit-dot od2"></div>
+          <div class="photo-clip">
+            <img src="profile.jpeg" alt="ArunKumar K" id="phImg"
+                 onerror="this.style.display='none';document.getElementById('phFB').style.display='flex'"/>
+            <div class="photo-fb" id="phFB">AK</div>
+            <div class="photo-scan"></div>
+          </div>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/arunkumark2903/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Arun7ak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:arunkumar.k2903@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-text-side">
+        <div class="hero-status hero-anim" style="--d:.05s">
+          <span class="status-led"></span>
+          <span class="fira">sys:ready //</span> Available for opportunities
+        </div>
+        <h1 class="hero-name hero-anim" style="--d:.1s">
+          <span class="hn-first">ArunKumar</span>
+          <span class="hn-last neon-text">K</span>
+        </h1>
+        <p class="hero-role hero-anim" style="--d:.18s">
+          <span class="fira role-bracket">&gt;&gt;</span>
+          Data Scientist
+          <span class="role-loc"><i class="fas fa-location-dot"></i> Chennai, India</span>
+        </p>
+        <p class="hero-tags hero-anim" style="--d:.24s">
+          Machine Learning <span class="tag-sep">|</span>
+          Deep Learning <span class="tag-sep">|</span>
+          Generative AI
+        </p>
+        <p class="hero-intro hero-anim" style="--d:.3s">
+          Data Scientist with experience in developing machine learning pipelines, AI-driven analytics systems, and intelligent automation solutions. Skilled in machine learning, deep learning, generative AI, and computer vision applications.
+        </p>
+        <div class="hero-btns hero-anim" style="--d:.38s">
+          <a href="#projects" class="btn-neon"><i class="fas fa-code-branch"></i> View Projects</a>
+          <a href="#contact"  class="btn-ghost-neon"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div><span class="fira scroll-label">scroll</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 01</span>
+        <h2>About <em>Me</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="about-card neon-card" data-reveal data-delay="100">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="about-content">
+          <p>ArunKumar K is a <strong>Data Scientist</strong> with hands-on experience building machine learning systems, AI solutions, and analytics pipelines.</p>
+          <p>He has worked on automated machine learning pipelines, customer churn prediction systems, customer segmentation automation, generative AI recommendation systems, and computer vision solutions for retail analytics.</p>
+          <p>He also has experience designing <strong>AI proof-of-concept solutions</strong> and preparing technical proposals for companies. His technical interests include machine learning systems, generative AI applications, intelligent automation pipelines, and data-driven decision systems.</p>
+          <div class="about-metrics">
+            <div class="metric"><span class="metric-val neon-text">10<sup>+</sup></span><span class="metric-label">Months Professional</span></div>
+            <div class="metric"><span class="metric-val neon-text">5<sup>+</sup></span><span class="metric-label">Key Projects</span></div>
+            <div class="metric"><span class="metric-val neon-text">5</span><span class="metric-label">Certifications</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 02</span>
+        <h2>Tech <em>Arsenal</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="sk-card neon-card" data-reveal data-delay="0">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-code"></i></div><h3>Programming</h3></div>
+          <div class="sk-tags"><span>Python</span><span>SQL</span></div>
+        </div>
+        <div class="sk-card neon-card" data-reveal data-delay="70">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-brain"></i></div><h3>ML &amp; AI</h3></div>
+          <div class="sk-tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>Generative AI</span>
+            <span>Customer Segmentation</span><span>Churn Prediction</span><span>Recommendation Systems</span>
+          </div>
+        </div>
+        <div class="sk-card neon-card" data-reveal data-delay="140">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-database"></i></div><h3>Data Engineering</h3></div>
+          <div class="sk-tags"><span>Apache Airflow</span><span>PostgreSQL</span></div>
+        </div>
+        <div class="sk-card neon-card" data-reveal data-delay="210">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-eye"></i></div><h3>Computer Vision</h3></div>
+          <div class="sk-tags"><span>YOLO Models</span><span>Retail Vision Analytics</span></div>
+        </div>
+        <div class="sk-card neon-card" data-reveal data-delay="280">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-chart-column"></i></div><h3>Data Visualization</h3></div>
+          <div class="sk-tags"><span>Power BI</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 03</span>
+        <h2>Professional <em>Experience</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="exp-block" data-reveal>
+        <div class="exp-top neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="exp-meta">
+            <div class="exp-icon"><i class="fas fa-microchip"></i></div>
+            <div><h3 class="exp-role">Data Scientist</h3><p class="exp-co">Prowesstics</p></div>
+          </div>
+          <div class="exp-dur fira">10 Months</div>
+        </div>
+        <div class="exp-items">
+          <div class="exp-item" data-reveal data-delay="0">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-robot"></i> Automated ML Pipeline</h4>
+              <p>Developed automated machine learning pipelines for model training and prediction workflows using Python and Airflow.</p>
+            </div>
+          </div>
+          <div class="exp-item" data-reveal data-delay="60">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-users"></i> Customer Segmentation Automation</h4>
+              <p>Built automated segmentation pipelines for grouping customers using behavioral data.</p>
+            </div>
+          </div>
+          <div class="exp-item" data-reveal data-delay="120">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-chart-line"></i> Churn Simulation System</h4>
+              <p>Developed systems to simulate churn scenarios and evaluate data-driven retention strategies.</p>
+            </div>
+          </div>
+          <div class="exp-item" data-reveal data-delay="180">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-microchip"></i> LLM Recommendation System</h4>
+              <p>Built recommendation agents using large language models for personalized insights.</p>
+            </div>
+          </div>
+          <div class="exp-item" data-reveal data-delay="240">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-file-code"></i> AI Proof-of-Concept Solutions</h4>
+              <p>Developed AI-based document solutions for multiple organizations.</p>
+            </div>
+          </div>
+          <div class="exp-item" data-reveal data-delay="300">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-store"></i> Retail Computer Vision Analytics</h4>
+              <p>Built vision analytics solutions using YOLO models for retail environment analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 04</span>
+        <h2>Key <em>Projects</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="proj-grid">
+
+        <div class="proj-card proj-featured" data-reveal data-delay="0">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">01</div>
+          <div class="pc-badge">Featured</div>
+          <h3>Customer Churn Intelligence System</h3>
+          <p>End-to-end churn analytics platform combining predictive modeling, root cause analysis, intelligent recommendations, and automated outreach.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Churn prediction using ML and deep learning models</li>
+            <li><i class="fas fa-chevron-right"></i> Root cause analysis for key attrition drivers</li>
+            <li><i class="fas fa-chevron-right"></i> Customer segmentation for retention strategy design</li>
+            <li><i class="fas fa-chevron-right"></i> LLM-driven next-best-action recommendation agent</li>
+            <li><i class="fas fa-chevron-right"></i> Churn simulator for what-if scenario &amp; ROI analysis</li>
+            <li><i class="fas fa-chevron-right"></i> Email agent for automated personalized outreach campaigns</li>
+          </ul>
+          <div class="pc-tech"><span>ML</span><span>Deep Learning</span><span>LLM</span><span>Generative AI</span><span>Python</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="80">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">02</div>
+          <h3>Automated ML Pipeline</h3>
+          <p>Automated model selection and training pipeline with full orchestration and configuration control.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Built in Python with modular architecture</li>
+            <li><i class="fas fa-chevron-right"></i> Orchestrated using Apache Airflow</li>
+            <li><i class="fas fa-chevron-right"></i> PostgreSQL for results storage</li>
+            <li><i class="fas fa-chevron-right"></i> JSON-driven pipeline configuration</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>JSON</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="160">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">03</div>
+          <h3>Automated Customer Segmentation</h3>
+          <p>End-to-end automated clustering and segmentation pipeline for behavioral customer grouping.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Automated clustering and segmentation workflows</li>
+            <li><i class="fas fa-chevron-right"></i> Python-based modular pipeline</li>
+            <li><i class="fas fa-chevron-right"></i> Apache Airflow orchestration</li>
+            <li><i class="fas fa-chevron-right"></i> PostgreSQL storage &amp; JSON config-driven</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>Clustering</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="0">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">04</div>
+          <h3>Retail Vision Analytics</h3>
+          <p>Computer vision system for retail environment analysis using trained YOLO object detection models.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Annotated retail store customer images</li>
+            <li><i class="fas fa-chevron-right"></i> Trained multiple YOLO object detection models</li>
+            <li><i class="fas fa-chevron-right"></i> CV models to analyze retail environments</li>
+          </ul>
+          <div class="pc-tech"><span>YOLO</span><span>Computer Vision</span><span>Python</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="80">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">05</div>
+          <h3>AI Proposal Development</h3>
+          <p>Designed and delivered comprehensive AI solution architecture proposals for enterprise clients.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Developed AI solution proposals for two companies</li>
+            <li><i class="fas fa-chevron-right"></i> Designed solution architectures and concept docs</li>
+            <li><i class="fas fa-chevron-right"></i> Prepared full project proposal documentation</li>
+          </ul>
+          <div class="pc-tech"><span>Generative AI</span><span>Solution Architecture</span><span>AI Strategy</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 05</span>
+        <h2>Education</h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="edu-card neon-card" data-reveal>
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <span class="fira edu-label">B.E — Electronics &amp; Instrumentation Engineering</span>
+          <h3>Velammal Engineering College</h3>
+          <p><i class="fas fa-location-dot"></i> Chennai, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 06</span>
+        <h2><em>Certifications</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card neon-card" data-reveal data-delay="0">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>SQL Certification</h4><span>Great Learning</span></div>
+        </div>
+        <div class="cert-card neon-card" data-reveal data-delay="70">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>SQL Certification</h4><span>HackerRank</span></div>
+        </div>
+        <div class="cert-card neon-card" data-reveal data-delay="140">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Python Programming</h4><span>NPTEL</span></div>
+        </div>
+        <div class="cert-card neon-card" data-reveal data-delay="210">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Data Science Program</h4><span>GUVI — IIT Madras</span></div>
+        </div>
+        <div class="cert-card neon-card" data-reveal data-delay="280">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Power BI Certification</h4><span>Edukera</span></div>
+        </div>
+      </div>
+      <div class="guvi-callout neon-card" data-reveal data-delay="350">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="guvi-ico"><i class="fas fa-flask"></i></div>
+        <div>
+          <h4>GUVI IIT Madras — Data Science Program</h4>
+          <p>Completed comprehensive Data Science training with hands-on projects including machine learning models, Power BI analytics dashboards, and SQL data analysis projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 07</span>
+        <h2>Get In <em>Touch</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="contact-center" data-reveal>
+        <div class="contact-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <p class="contact-tagline">Open to collaboration, AI projects, and professional networking.</p>
+          <a href="mailto:arunkumar.k2903@gmail.com" class="contact-main-btn">
+            <i class="fas fa-envelope"></i> arunkumar.k2903@gmail.com
+          </a>
+          <div class="contact-row">
+            <a href="https://www.linkedin.com/in/arunkumark2903/" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Arun7ak" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:arunkumar.k2903@gmail.com" class="contact-link-btn">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <span class="fira footer-brand">arunkumar.k &lt;/&gt;</span>
+      <span class="footer-mid">© 2025 ArunKumar K · Data Scientist · Chennai</span>
+      <span class="fira footer-right">sys:end //</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
