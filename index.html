@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArunKumar K — Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-wrap">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-terminal"></i></span>
+        <span class="brand-text">arunkumar<span class="brand-accent">.k</span></span>
+      </a>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home"           class="nl active">Home</a></li>
+        <li><a href="#about"          class="nl">About</a></li>
+        <li><a href="#skills"         class="nl">Skills</a></li>
+        <li><a href="#experience"     class="nl">Experience</a></li>
+        <li><a href="#projects"       class="nl">Projects</a></li>
+        <li><a href="#education"      class="nl">Education</a></li>
+        <li><a href="#certifications" class="nl">Certs</a></li>
+        <li><a href="#contact"        class="nl">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-wrap">
+
+      <div class="hero-photo-side hero-anim" style="--d:0s">
+        <div class="photo-orbit">
+          <div class="orbit-ring or1"></div>
+          <div class="orbit-ring or2"></div>
+          <div class="orbit-dot od1"></div>
+          <div class="orbit-dot od2"></div>
+          <div class="photo-clip">
+            <img src="profile.jpeg" alt="ArunKumar K" id="phImg"
+                 onerror="this.style.display='none';document.getElementById('phFB').style.display='flex'"/>
+            <div class="photo-fb" id="phFB">AK</div>
+            <div class="photo-scan"></div>
+          </div>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/arunkumark2903/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Arun7ak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:arunkumar.k2903@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-text-side">
+        <div class="hero-status hero-anim" style="--d:.05s">
+          <span class="status-led"></span>
+          <span class="fira">sys:ready //</span> Available for opportunities
+        </div>
+        <h1 class="hero-name hero-anim" style="--d:.1s">
+          <span class="hn-first">ArunKumar</span>
+          <span class="hn-last neon-text">K</span>
+        </h1>
+        <p class="hero-role hero-anim" style="--d:.18s">
+          <span class="fira role-bracket">&gt;&gt;</span>
+          Data Scientist
+          <span class="role-loc"><i class="fas fa-location-dot"></i> Chennai, India</span>
+        </p>
+        <p class="hero-tags hero-anim" style="--d:.24s">
+          Machine Learning <span class="tag-sep">|</span>
+          Deep Learning <span class="tag-sep">|</span>
+          Generative AI <span class="tag-sep">|</span>
+          Computer Vision
+        </p>
+        <p class="hero-intro hero-anim" style="--d:.3s">
+          Data Scientist with 11 months of experience in machine learning, deep learning, and automated ML systems. Specialized in building scalable pipelines, model selection frameworks, and customer analytics on 23L+ records. Strong expertise in Python, SQL, Airflow, and cloud technologies.
+        </p>
+        <div class="hero-btns hero-anim" style="--d:.38s">
+          <a href="#projects" class="btn-neon"><i class="fas fa-code-branch"></i> View Projects</a>
+          <a href="#contact"  class="btn-ghost-neon"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div><span class="fira scroll-label">scroll</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 01</span>
+        <h2>About <em>Me</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="about-card neon-card" data-reveal data-delay="100">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="about-content">
+          <p>ArunKumar K is a <strong>Data Scientist</strong> with 11 months of professional experience at Prowesstics, specializing in machine learning systems, automated ML pipelines, and AI-driven analytics solutions on large-scale datasets.</p>
+          <p>He built an end-to-end ML pipeline for churn prediction and segmentation on <strong>23L+ records</strong>, achieving <strong>89.3% accuracy</strong> with optimized XGBoost. He also developed an LLM-based recommendation system using LLaMA 4 Maverick, automated ML model selection with Apache Airflow (reducing manual effort by ~60%), and a YOLOv8-based retail footfall counting system.</p>
+          <p>His technical interests span machine learning systems, generative AI, MLOps pipelines, computer vision, and data-driven business decision frameworks. He holds a B.E. in Electronics &amp; Instrumentation Engineering from Velammal Engineering College, Chennai, with an A+ grade.</p>
+          <div class="about-metrics">
+            <div class="metric"><span class="metric-val neon-text">11</span><span class="metric-label">Months Professional</span></div>
+            <div class="metric"><span class="metric-val neon-text">23L<sup>+</sup></span><span class="metric-label">Records Processed</span></div>
+            <div class="metric"><span class="metric-val neon-text">89.3<sup>%</sup></span><span class="metric-label">Best Model Accuracy</span></div>
+            <div class="metric"><span class="metric-val neon-text">7</span><span class="metric-label">Certifications</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 02</span>
+        <h2>Tech <em>Arsenal</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="sk-card neon-card" data-reveal data-delay="0">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-code"></i></div><h3>Programming</h3></div>
+          <div class="sk-tags"><span>Python</span><span>SQL</span></div>
+        </div>
+
+        <div class="sk-card neon-card" data-reveal data-delay="70">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-brain"></i></div><h3>ML &amp; AI</h3></div>
+          <div class="sk-tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>Generative AI</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card" data-reveal data-delay="140">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-layer-group"></i></div><h3>Frameworks</h3></div>
+          <div class="sk-tags">
+            <span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span>
+            <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+
+        <div class="sk-card neon-card" data-reveal data-delay="210">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-gears"></i></div><h3>MLOps</h3></div>
+          <div class="sk-tags"><span>Apache Airflow</span><span>FastAPI</span><span>Docker</span></div>
+        </div>
+
+        <div class="sk-card neon-card" data-reveal data-delay="280">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-cloud"></i></div><h3>Cloud &amp; Databases</h3></div>
+          <div class="sk-tags"><span>Microsoft Azure</span><span>PostgreSQL</span><span>MongoDB</span></div>
+        </div>
+
+        <div class="sk-card neon-card" data-reveal data-delay="350">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="sk-head"><div class="sk-ico"><i class="fas fa-chart-column"></i></div><h3>Visualization &amp; Data</h3></div>
+          <div class="sk-tags">
+            <span>Power BI</span><span>Feature Engineering</span><span>EDA</span>
+            <span>Data Cleaning</span><span>Encoding</span><span>Scaling</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 03</span>
+        <h2>Professional <em>Experience</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="exp-block" data-reveal>
+        <div class="exp-top neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="exp-meta">
+            <div class="exp-icon"><i class="fas fa-microchip"></i></div>
+            <div>
+              <h3 class="exp-role">Data Scientist</h3>
+              <p class="exp-co">Prowesstics &nbsp;&middot;&nbsp; Chennai, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="exp-dur fira">Jun 2025 &ndash; Present</div>
+        </div>
+        <div class="exp-items">
+
+          <div class="exp-item" data-reveal data-delay="0">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-users"></i> Customer Analytics &amp; ML Modeling</h4>
+              <p>Built end-to-end ML pipeline for churn prediction &amp; segmentation on 23L+ records. Engineered 20+ features including CLV, retention rate, premium ratios, and lag features. Applied PCA, LDA, and statistical feature selection to reduce dimensionality. Trained 10+ ML/DL models — XGBoost, RF, CatBoost, LSTM, GRU — achieving <strong style="color:var(--neon)">89.3% accuracy</strong>. Implemented multi-set undersampling strategy improving minority class detection. Designed ML-driven segmentation using churn probability, CLV, and discount sensitivity.</p>
+            </div>
+          </div>
+
+          <div class="exp-item" data-reveal data-delay="60">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-robot"></i> LLM-Based Recommendation System</h4>
+              <p>Developed LLM-based recommendation system using <strong style="color:var(--neon)">LLaMA 4 Maverick</strong> for automated retention strategies. Improved prediction alignment using threshold optimization &amp; recalibration techniques. Delivered insights on pricing sensitivity and retention strategies impacting business decisions.</p>
+            </div>
+          </div>
+
+          <div class="exp-item" data-reveal data-delay="120">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-gears"></i> Automated ML Model Selection System</h4>
+              <p>Built multi-phase automated ML pipeline with ensemble learning and grid search. Integrated cross-validation, time-based validation, and future prediction frameworks. Designed JSON-driven configurable architecture for scalable experimentation. Automated workflows using <strong style="color:var(--neon)">Apache Airflow DAGs</strong>, reducing manual effort by ~60%.</p>
+            </div>
+          </div>
+
+          <div class="exp-item" data-reveal data-delay="180">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-diagram-project"></i> Customer Segmentation System</h4>
+              <p>Developed automated clustering pipeline using 10+ algorithms: KMeans, DBSCAN, GMM, VAE, DEC. Evaluated models using Silhouette, Davies-Bouldin, CH score, BIC, and AIC. Improved segmentation consistency via future data validation. Deployed scalable Airflow-based workflow for scheduled segmentation.</p>
+            </div>
+          </div>
+
+          <div class="exp-item" data-reveal data-delay="240">
+            <div class="ei-line"></div><div class="ei-node"></div>
+            <div class="ei-body neon-card-sm">
+              <h4><i class="fas fa-store"></i> Retail Analytics POC</h4>
+              <p>Implemented Market Basket Analysis using Apriori, FP-Growth, and Eclat algorithms for product insights. Built <strong style="color:var(--neon)">YOLOv8-based</strong> footfall and people counting system for retail environment analysis.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 04</span>
+        <h2>Key <em>Projects</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="proj-grid">
+
+        <div class="proj-card proj-featured" data-reveal data-delay="0">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">01</div>
+          <div class="pc-badge">Featured</div>
+          <h3>Customer Churn Intelligence System</h3>
+          <p>End-to-end churn analytics on 23L+ records — predictive modeling, root cause analysis, LLM-driven retention recommendations, and automated outreach. Achieved 89.3% accuracy with XGBoost.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Engineered 20+ features: CLV, retention rate, premium ratios, lag features</li>
+            <li><i class="fas fa-chevron-right"></i> Applied PCA, LDA, statistical feature selection for dimensionality reduction</li>
+            <li><i class="fas fa-chevron-right"></i> Trained XGBoost, RF, CatBoost, LSTM, GRU &mdash; 89.3% accuracy</li>
+            <li><i class="fas fa-chevron-right"></i> Multi-set undersampling strategy improving minority class detection</li>
+            <li><i class="fas fa-chevron-right"></i> ML-driven segmentation via churn probability, CLV &amp; discount sensitivity</li>
+            <li><i class="fas fa-chevron-right"></i> LLaMA 4 Maverick for automated retention strategy recommendations</li>
+          </ul>
+          <div class="pc-tech"><span>XGBoost</span><span>CatBoost</span><span>LSTM</span><span>LLaMA 4</span><span>Python</span><span>Scikit-learn</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="80">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">02</div>
+          <h3>Automated ML Model Selection</h3>
+          <p>Multi-phase automated pipeline with ensemble learning, grid search, and Airflow orchestration for scalable ML experimentation.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Ensemble learning &amp; grid search integration</li>
+            <li><i class="fas fa-chevron-right"></i> Cross-validation &amp; time-based validation frameworks</li>
+            <li><i class="fas fa-chevron-right"></i> JSON-driven configurable architecture</li>
+            <li><i class="fas fa-chevron-right"></i> Airflow DAGs — reduced manual effort ~60%</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>JSON</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="160">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">03</div>
+          <h3>Customer Segmentation System</h3>
+          <p>Automated clustering pipeline using 10+ algorithms with multi-metric evaluation and scheduled Airflow workflows.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> 10+ algorithms: KMeans, DBSCAN, GMM, VAE, DEC</li>
+            <li><i class="fas fa-chevron-right"></i> Evaluated via Silhouette, Davies-Bouldin, CH, BIC, AIC</li>
+            <li><i class="fas fa-chevron-right"></i> Future data validation for consistency</li>
+            <li><i class="fas fa-chevron-right"></i> Scalable Airflow-based scheduled workflow</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Airflow</span><span>KMeans</span><span>DBSCAN</span><span>VAE</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="0">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">04</div>
+          <h3>Banking Prediction System</h3>
+          <p>Loan default prediction and customer segmentation with a real-time Streamlit app for interactive decision support.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> ML models for loan default prediction &amp; segmentation</li>
+            <li><i class="fas fa-chevron-right"></i> Streamlit app enabling real-time predictions</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>ML</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="80">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">05</div>
+          <h3>Tourism Prediction System</h3>
+          <p>Visitor trend forecasting model with real-time analytics dashboard built on Streamlit and MySQL.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> Forecasting model for visitor trend analysis</li>
+            <li><i class="fas fa-chevron-right"></i> Dashboard (Streamlit + MySQL) for real-time analytics</li>
+          </ul>
+          <div class="pc-tech"><span>Python</span><span>Streamlit</span><span>MySQL</span><span>Forecasting</span></div>
+        </div>
+
+        <div class="proj-card" data-reveal data-delay="160">
+          <div class="pc-glow"></div>
+          <div class="pc-index fira">06</div>
+          <h3>AI Chatbot Development</h3>
+          <p>NLP-based deep learning chatbot deployed as an interactive Streamlit application for real-time conversation.</p>
+          <ul class="pc-bullets">
+            <li><i class="fas fa-chevron-right"></i> NLP-based chatbot with deep learning</li>
+            <li><i class="fas fa-chevron-right"></i> Deployed interactive interface via Streamlit</li>
+          </ul>
+          <div class="pc-tech"><span>NLP</span><span>Deep Learning</span><span>Python</span><span>Streamlit</span></div>
+        </div>
+
+      </div>
+
+      <!-- Additional Projects Banner -->
+      <div class="add-proj-banner" data-reveal data-delay="200">
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div>
+        <div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <p class="fira add-proj-label">// additional_projects</p>
+        <div class="add-proj-tags">
+          <span>Tennis Analysis</span>
+          <span>Smart Basket Analysis</span>
+          <span>Bird Data Analysis</span>
+          <span>Crop Prediction</span>
+          <span>CKD Risk Prediction</span>
+          <span>Pizza Sales Analysis</span>
+          <span>YouTube Analytics</span>
+          <span>Retail Vision Analytics (YOLOv8)</span>
+          <span>Market Basket Analysis</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 05</span>
+        <h2>Education</h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="edu-card neon-card" data-reveal>
+        <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+        <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <span class="fira edu-label">B.E &mdash; Electronics &amp; Instrumentation Engineering</span>
+          <h3>Velammal Engineering College</h3>
+          <p><i class="fas fa-location-dot"></i> Chennai, India</p>
+          <p style="margin-top:6px;"><i class="fas fa-calendar-alt"></i>&nbsp;Sep 2020 &ndash; Apr 2024 &nbsp;&middot;&nbsp; <span style="color:var(--neon);font-weight:700;">Grade: A+</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 06</span>
+        <h2><em>Certifications</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card neon-card" data-reveal data-delay="0">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Master Data Science</h4><span>GUVI (HCL)</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="70">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Advanced Python</h4><span>GUVI &amp; IITM Pravartak</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="140">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>SQL Certification</h4><span>HackerRank</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="210">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Power BI</h4><span>Edureka</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="280">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>SQL Databases</h4><span>Great Learning</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="350">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Python Programming</h4><span>NPTEL</span></div>
+        </div>
+
+        <div class="cert-card neon-card" data-reveal data-delay="420">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <div class="cert-ico"><i class="fas fa-certificate"></i></div>
+          <div><h4>Microsoft Excel Specialist</h4><span>Microsoft</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="fira sec-num">// 07</span>
+        <h2>Get In <em>Touch</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="contact-center" data-reveal>
+        <div class="contact-card neon-card">
+          <div class="nc-corner tl"></div><div class="nc-corner tr"></div><div class="nc-corner bl"></div><div class="nc-corner br"></div>
+          <p class="contact-tagline">Open to collaboration, AI projects, and professional networking.</p>
+          <a href="mailto:arunkumar.k2903@gmail.com" class="contact-main-btn">
+            <i class="fas fa-envelope"></i> arunkumar.k2903@gmail.com
+          </a>
+          <div class="contact-row">
+            <a href="https://www.linkedin.com/in/arunkumark2903/" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Arun7ak" target="_blank" rel="noopener" class="contact-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="tel:+917540031631" class="contact-link-btn">
+              <i class="fas fa-phone"></i> +91-7540031631
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <span class="fira footer-brand">arunkumar.k</span>
+      <span class="footer-mid">Data Scientist &mdash; Chennai, India</span>
+      <span class="footer-right">Built with passion &amp; precision</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
